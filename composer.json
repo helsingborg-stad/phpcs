@@ -1,0 +1,25 @@
+{
+    "name": "helsingborg-stad/phpcs",
+    "description": "PHP_CodeSniffer rulesets supporting the coding standards for the Helsingborg Stad organization",
+    "type": "phpcodesniffer-standard",
+    "authors": [
+        {
+            "name": "Thor Brink",
+            "email": "thor.brink@helsingborg.se"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "^3.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "wp-coding-standards/wpcs": "^3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "bin": [
+        "phpcs-changed",
+        "phpcbf-changed"
+    ]
+}

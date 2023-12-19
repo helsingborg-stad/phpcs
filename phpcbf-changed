@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo 'Printing phpcs warnings for only Changed Files';
+
+branch_name="$1"
+git --no-pager diff --name-only "$branch_name" | tr '\n' ' ' | sed 's/\(.*\),/\1 /' | xargs vendor/bin/phpcbf
