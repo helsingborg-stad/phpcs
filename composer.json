@@ -2,7 +2,7 @@
     "name": "helsingborg-stad/phpcs",
     "description": "PHP_CodeSniffer rulesets supporting the coding standards for the Helsingborg Stad organization",
     "type": "phpcodesniffer-standard",
-    "version": "0.2.4",
+    "version": "0.3.0",
     "authors": [
         {
             "name": "Thor Brink",
