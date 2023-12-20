@@ -14,7 +14,7 @@ composer require --dev helsingborg-stad/phpcs
 ### Hbg-WordPress
 Specific ruleset for WordPress themes and plugins.
 
-#### Usage
+#### Example Usage
 ```xml
 <?xml version="1.0"?>
 <ruleset name="Some Wordpress Plugin">
