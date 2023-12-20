@@ -3,4 +3,10 @@
 echo 'Printing phpcs warnings for only Changed Files';
 
 branch_name="$1"
-git --no-pager diff --name-only "$branch_name" | tr '\n' ' ' | sed 's/\(.*\),/\1 /' | xargs vendor/bin/phpcbf
+files=$(git --no-pager diff --name-only "$branch_name")
+
+# Filter out files that do not exist
+files=$(echo "$files" | xargs -I{} sh -c '[ -f "{}" ] && echo "{}"')
+
+# Pass files to phpcs
+vendor/bin/phpcs $files
