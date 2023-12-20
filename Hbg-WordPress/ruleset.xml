@@ -14,6 +14,8 @@
     <rule ref="WordPress.Security"/>
     <rule ref="Generic.Formatting.MultipleStatementAlignment"/>
     <rule ref="WordPress.Arrays.MultipleStatementAlignment"/>
+    <rule ref="Squiz.Commenting.FunctionComment.Missing"></rule>
+    <rule ref="Squiz.Commenting.ClassComment.Missing"></rule>
 
     <exclude-pattern>./vendor</exclude-pattern>
     <exclude-pattern>./**/*.js</exclude-pattern>
