@@ -9,4 +9,4 @@ files=$(git --no-pager diff --name-only "$branch_name")
 files=$(echo "$files" | xargs -I{} sh -c '[ -f "{}" ] && echo "{}"')
 
 # Pass files to phpcs
-vendor/bin/phpcs $files
+vendor/bin/phpcbf $files
